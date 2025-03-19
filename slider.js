@@ -2,7 +2,7 @@ let images = [];
 let currentIndex = 0;
 
 async function fetchImages() {
-    const url = "https://script.google.com/macros/s/AKfycbzrayjkpdOrnUmc03cQM2FIzoebbQJyiM7ehoMiDOtBhHzxcvgwJSsOhwtj-OLHaYJSxw/exec";
+    const url = "https://script.google.com/macros/s/AKfycbwqS5F2Xk-Mau3QR5P67OQQ58K82I_I6SXZMYIEuw-43MsrWpcXWaenZqWK9DWvd0-t/exec";
     try {
         const response = await fetch(url, { method: "POST" });
         const data = await response.json();
