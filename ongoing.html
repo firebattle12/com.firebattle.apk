@@ -30,7 +30,7 @@
             return;
         }
 
-        fetch("https://script.google.com/macros/s/AKfycbx1WsSYnXMLgD2yB90J3-yqzrfwQ2aOicpjtz_jUJcK4a97VBiwo0Vo-Nu1I-0TSuGtNA/exec?username=" + username)
+        fetch("https://script.google.com/macros/s/AKfycbwA_GLSZejsueEuNaOUYewwxO_T8glLadgrC3DAcFTEQeOT81bLDiuFp7IJ25R50kJ3JQ/exec?username=" + username)
             .then(response => response.json())
             .then(data => {
                 document.getElementById("loader").style.display = "none";
