@@ -82,7 +82,7 @@
     };
 
     function checkUserStatus(username) {
-        fetch(`https://script.google.com/macros/s/AKfycbyXThm5OAum2z_0zPhYh9Mf2L2xy6YmL4tGM3K6V62rLqOyy5e7IHu1qsF_OVOBi3QA9g/exec?action=getCoins&username=${username}`)
+        fetch(`https://script.google.com/macros/s/AKfycbwnXMQxf_QkeJPDtwM5C3JNRZNgdOvKW_80W9STWUphbLQt8z_fLVgk0-3U14gK-bdmmA/exec?action=getCoins&username=${username}`)
         .then(response => response.json())
         .then(data => {
             if (data.banned) {
@@ -99,7 +99,7 @@
     }
 
     function fetchModes() {
-        fetch("https://script.google.com/macros/s/AKfycbyXThm5OAum2z_0zPhYh9Mf2L2xy6YmL4tGM3K6V62rLqOyy5e7IHu1qsF_OVOBi3QA9g/exec?action=getModes")
+        fetch("https://script.google.com/macros/s/AKfycbwnXMQxf_QkeJPDtwM5C3JNRZNgdOvKW_80W9STWUphbLQt8z_fLVgk0-3U14gK-bdmmA/exec?action=getModes")
         .then(response => response.json())
         .then(data => {
             let modesContainer = document.getElementById("modesContainer");
@@ -126,7 +126,7 @@
     }
 
     function fetchUserCoins(username) {
-        fetch(`https://script.google.com/macros/s/AKfycbyXThm5OAum2z_0zPhYh9Mf2L2xy6YmL4tGM3K6V62rLqOyy5e7IHu1qsF_OVOBi3QA9g/exec?action=getCoins&username=${username}`)
+        fetch(`https://script.google.com/macros/s/AKfycbwnXMQxf_QkeJPDtwM5C3JNRZNgdOvKW_80W9STWUphbLQt8z_fLVgk0-3U14gK-bdmmA/exec?action=getCoins&username=${username}`)
         .then(response => response.json())
         .then(data => {
             let coinsDisplay = document.getElementById("coinsDisplay");
